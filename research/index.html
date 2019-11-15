@@ -15,8 +15,14 @@ title: Mitch Hill (Research)
 <p>
   Energy-based learning with ConvNet functions exhibits surprising behaviors not encountered for earlier energy functions.
   Two distinct of outcomes are possible: <a href="https://arxiv.org/pdf/1903.12370.pdf">convergent learning and non-convergent learning</a>. 
+  <br/><br/>
   Convergent learning is consistent with conventional theoretical expectations but is difficult to achieve in practice.
+  Learning convergent energy functions with realistic long-run MCMC samples is essential for energy landscape mapping applications.
+  My research introduces the first ConvNet energy functions with realistic long-run MCMC samples in the image space.  
+  <br/><br/>
   Non-convergent learning is an unexpected phenomenon that occurs for ConvNet energy functions which is explored <a href="https://arxiv.org/pdf/1904.09770.pdf">here</a>.
+  Informative initialization methods for MCMC sampling such as Contrastive Divergence and Persistent Contrastive Divergence are not needed for stable learning and high-quality short-run synthesis.
+  By initializing MCMC samples from noise images rather than a data iamge or persistent image, one can learn a non-convergent energy function that can generate realistic images from noise like a generator or flow model.
 </p>
   <br/>
   <div style="float:center"><img src="nonconv_noise.png" alt="Realistic image generation from a noise signal with non-convergent learning." width=900></div>
