@@ -5,10 +5,10 @@ title: Mitch Hill (Research)
 <h1>Research</h1>
 
 <p> 
-  My current research has two major branches: 
+  Research projects include:
 </p>
 
-<h2>1. Learning ConvNet Energy Functions of High-Dimensional Image Data</h2>
+<h2>Learning ConvNet Energy Functions of High-Dimensional Image Data</h2>
 <div style="overflow:auto">
   <div style="float:left; margin-right:25px"><img src="toy_learning.png" alt="Convergent and non-convergent learning outcomes for 2D toy datasets." width=450><br/><br/>
   <img src="conv_nonconv.png" alt="Convergent and non-convergent learning outcomes for Oxford Flowers 102 dataset." width=450><br/><br/></div>
@@ -26,7 +26,7 @@ title: Mitch Hill (Research)
 </p>
   <div><img src="nonconv_noise.png" alt="Realistic image generation from a noise signal with non-convergent learning." width=100%><br/><br/></div>
 </div>
-<h2>2. Mapping Macroscopic Structures of Non-Convex Energy Functions</h2>
+<h2>Mapping Macroscopic Structures of Non-Convex Energy Functions</h2>
 <div style="overflow:auto">
 <div style="float:right; margin-left: 25px; margin-top: 25px"><img src="fashion_mnist_viz.png" alt="Disconnectivy Graph for energy landscape learned from Fashion-MNIST." width=450></div>
 <p>
@@ -36,4 +36,19 @@ title: Mitch Hill (Research)
   Related groups of local modes form macroscopic non-convex structures that are analagous to folding funnels of protein potentials.
   I use a novel MCMC algorithm to detect metastable structures of learned energy functions that correspond to intuitive image concepts, as explored <a href="https://arxiv.org/pdf/1803.01043.pdf">here</a>.
 </p>
+</div>
+<h2>Defense Against Adversarial Attacks with ConvNet Energy Functions</h2>
+<div style="overflow:auto">
+<div><img src="defense_strategy.png" alt="Strategy for adversarial defense with an image energy function." width=100%><br/><br/></div>
+<p>
+  Image classifier networks are highly susceptible to inperceptible perturbations that drastically alter network output.
+  These pertubations can cause a network to output non-sensical results for images that are clearly recognizable to a human.
+  In contrast to existing approaches that alter classifier training to learn robust networks, <a href="https://arxiv.org/abs/2005.13525.pdf">this project</a> 
+  seeks to secure naturally-trained classifiers using only image transformation. Long-run MCMC sampling
+  with a convergent energy function preserves recognizable image features needed for classification while removing
+  adversarial signals that disrupt classifier performance. The resulting defense is the first to secure highly vulnerable
+  classifiers trained with natural images alone, providing the first viable and competitive alternative to adversarial training and related
+  robust training modifications.
+</p>
+  <div><img src="defense_table.png" width=60%><br/><br/></div>
 </div>
