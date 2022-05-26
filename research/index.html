@@ -2,11 +2,7 @@
 layout: default
 title: Mitch Hill (Research)
 ---
-<h1>Research</h1>
-
-<p> 
-  Research projects include:
-</p>
+<h1>Research Highlights</h1>
 
 <h2>Learning ConvNet Energy Functions of High-Dimensional Image Data</h2>
 <div style="overflow:auto">
@@ -26,6 +22,7 @@ title: Mitch Hill (Research)
 </p>
   <div><img src="nonconv_noise.png" alt="Realistic image generation from a noise signal with non-convergent learning." width=100%><br/><br/></div>
 </div>
+
 <h2>Mapping Macroscopic Structures of Non-Convex Energy Functions</h2>
 <div style="overflow:auto">
 <div style="float:right; margin-left: 25px; margin-top: 25px"><img src="fashion_mnist_viz.png" alt="Disconnectivy Graph for energy landscape learned from Fashion-MNIST." width=450></div>
@@ -37,6 +34,7 @@ title: Mitch Hill (Research)
   I use a novel MCMC algorithm to detect metastable structures of learned energy functions that correspond to intuitive image concepts, as explored <a href="https://arxiv.org/pdf/1803.01043.pdf">here</a>.
 </p>
 </div>
+
 <h2>Defense Against Adversarial Attacks with ConvNet Energy Functions</h2>
 <div style="overflow:auto">
 <div><img src="defense_strategy.png" alt="Strategy for adversarial defense with an image energy function." width=100%><br/><br/></div>
@@ -51,4 +49,18 @@ title: Mitch Hill (Research)
   robust training modifications.
 </p>
   <center><img src="defense_table.png" width=80% class="center"><br/><br/></center>
+</div>
+
+<h2>High-Quality High-Resolution Unconditional Image Synthesis</h2>
+<div style="overflow:auto">
+<div style="float:right; margin-left: 25px; margin-top: 25px"><img src="imagenet_samples.png" alt="Unconditional ImageNet samples at 128x128 resolution. This model achieves an impressive FID score of 29.2" width=450></div>
+<p>
+  Image synthesis has seen rapid progress in the past few years. 
+  Many successful synthesis models that generate realistic samples are conditional models, meaning that supervised label information guides image appearance.
+  Unconditional image synthesis, which seeks to generate realistic and diverse images without any supervised information, remains a difficult task.
+  Investigations into EBM learning, especially MCMC initilization and incorporation of generator latent spaces, has led to a major breakthrough in EBM learning for complex unconditional datasets.
+  In particular, our new methods learn models that can achieve an FID score of 29.2 on unconditional ImageNet at 128x128 pixel resolution. 
+  These results approach what is achievable by state-of-the-art generative models and vastly improve upon existing EBM results.
+  Preliminary results can be found <a href="https://arxiv.org/pdf/2205.12243.pdf">here</a>, and further results will be released in the near future.
+</p>
 </div>
